@@ -7,7 +7,7 @@ bot = tb.TeleBot(cfg.TOKEN)
 # Обработчик команды /start
 @bot.message_handler(commands=['start'])
 def start(m):
-    bot.send_message(m.chat.id, 'Hi! Here you can learn more about me, get in touch, find useful links, and stay updated with the latest news. Choose an option below! Also, check out [source code on github]', reply_markup=kb.menu, parse_mode='Markdown', disable_web_page_preview=True)
+    bot.send_message(m.chat.id, 'Hi! Here you can learn more about me, get in touch, find useful links, and stay updated with the latest news. Choose an option below! Also, check out [source code on github](https://github.com/warmap1/warmap1-bot)', reply_markup=kb.menu, parse_mode='Markdown', disable_web_page_preview=True)
 
 # Обработчик текстовых сообщений
 @bot.message_handler(content_types=['text'])
