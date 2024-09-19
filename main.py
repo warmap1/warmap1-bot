@@ -16,7 +16,7 @@ def text(m):
         if m.text == '📝About me':
             bot.send_message(m.chat.id, "I'm a Python bot developer. I live in Russia. I love playing games. I use ArchLinux (btw) (if someone needs - you can contact me for any help with Linux).")
         elif m.text == '✉️Contact me':
-            bot.send_message(m.chat.id, 'Discord: warmap1\nMatrix: @warmap1:matrix.org')
+            bot.send_message(m.chat.id, 'Discord: warmap1\nMatrix: @warmap1:matrix.org\nTelegram: @warmap_1')
         elif m.text == '🔗Links':
             bot.send_message(m.chat.id, 'My [GitHub](https://github.com/warmap1)', parse_mode='Markdown', disable_web_page_preview=True)
         elif m.text == "📰Bot's news":
